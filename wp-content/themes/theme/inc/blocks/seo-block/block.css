@@ -1,0 +1,57 @@
+#seo-block {
+  height: 470px;
+  display: flex;
+  gap: 60px;
+  border-radius: 10px;
+  background: var(--Card, #FFF);
+}
+#seo-block .image {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+#seo-block .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#seo-block .text-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 20px;
+  margin: 40px 40px 40px 0;
+  color: var(--Main-text, #565666);
+}
+
+/*============ MEDIA ==================*/
+@media (max-width: 1221px) {
+  #seo-block {
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #seo-block .image {
+    aspect-ratio: 16/5;
+    width: 100%;
+    height: auto;
+  }
+  #seo-block .text-block {
+    height: 470px;
+    margin: 0;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 769px) {
+  #seo-block {
+    gap: 15px;
+  }
+}
+@media (max-width: 576px) {
+  #seo-block {
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=block.css.map */

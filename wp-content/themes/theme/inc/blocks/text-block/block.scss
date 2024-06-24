@@ -1,0 +1,82 @@
+@import '../../../assets/css/_colors.scss';
+
+@function calcFluidFontSize($f-min, $f-max, $v-min, $v-max) {
+	$k: ($f-max - $f-min)/($v-max - $v-min);
+	$b: $f-min - $k * $v-min;
+
+	$b: $b * 1px;
+
+	@return calc(#{$k} * 100vw + #{$b});
+}
+
+#text-block{
+	display: flex;
+	gap: 30px;
+
+	.block{
+		&-title-wrapper{
+			position: relative;
+			width: 470px;
+			flex-shrink: 0;
+		}
+
+		&-title{
+			position: sticky;
+			top: 15px;
+			margin-bottom: 0;
+
+			text-align: left;
+		}
+
+		&__text{
+			color: var(--Main-text, #565666);
+		}
+	}
+}
+
+/*============ MEDIA ==================*/
+@media (max-width: 1240px) {
+
+}
+
+@media (max-width: 1221px) {
+
+}
+
+@media (max-width: 1025px) {
+
+}
+
+@media (max-width: 992px) {
+	#text-block{
+		flex-direction: column;
+
+		.block{
+			&-title-wrapper{
+				width: 100%;
+			}
+
+			&-title{
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 769px) {
+	#text-block{
+		gap: 15px;
+	}
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 498px) {
+
+}
+
+@media (max-width: 375px) {
+
+}

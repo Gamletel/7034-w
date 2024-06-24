@@ -1,0 +1,34 @@
+#brands-block .image {
+  cursor: pointer;
+  box-sizing: border-box;
+  aspect-ratio: 21/12;
+  width: 100%;
+  height: auto;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background: var(--Card, #FFF);
+}
+#brands-block .image:hover img {
+  filter: grayscale(0);
+}
+#brands-block .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(1);
+  transition: filter 0.15s ease-in;
+}
+
+/*============ MEDIA ==================*/
+@media (max-width: 769px) {
+  #brands-block .image {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 576px) {
+  #brands-block .image {
+    padding: 5px 10px;
+  }
+}
+
+/*# sourceMappingURL=block.css.map */

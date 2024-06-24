@@ -1,0 +1,38 @@
+#text-block {
+  display: flex;
+  gap: 30px;
+}
+#text-block .block-title-wrapper {
+  position: relative;
+  width: 470px;
+  flex-shrink: 0;
+}
+#text-block .block-title {
+  position: sticky;
+  top: 15px;
+  margin-bottom: 0;
+  text-align: left;
+}
+#text-block .block__text {
+  color: var(--Main-text, #565666);
+}
+
+/*============ MEDIA ==================*/
+@media (max-width: 992px) {
+  #text-block {
+    flex-direction: column;
+  }
+  #text-block .block-title-wrapper {
+    width: 100%;
+  }
+  #text-block .block-title {
+    text-align: center;
+  }
+}
+@media (max-width: 769px) {
+  #text-block {
+    gap: 15px;
+  }
+}
+
+/*# sourceMappingURL=block.css.map */

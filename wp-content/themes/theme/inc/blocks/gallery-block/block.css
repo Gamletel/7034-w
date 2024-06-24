@@ -1,0 +1,15 @@
+#gallery-block .image {
+  box-sizing: border-box;
+  aspect-ratio: 570/315;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#gallery-block .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*============ MEDIA ==================*/
+
+/*# sourceMappingURL=block.css.map */
